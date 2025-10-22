@@ -1,0 +1,44 @@
+/* Otimizações de performance */
+* {
+  box-sizing: border-box;
+}
+
+.app-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* GPU acceleration */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.top-right-rings-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  /* GPU acceleration */
+  will-change: transform;
+}
+
+.ring-top-right {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.ring-top-left-of-right {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.ring-bottom-of-right {
+  grid-column: 2;
+  grid-row: 2;
+}
+
