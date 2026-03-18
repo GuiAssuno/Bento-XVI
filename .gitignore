@@ -1,40 +1,39 @@
-__pycache__# --- Python Geral ---
+# --- Geral ---
+__pycache__
 __pycache__/
 *.py[cod]
 *$py.class
 
-# --- Ambientes Virtuais (Essencial para não subir bibliotecas inteiras) ---
+# --- Ambientes Virtuais ---
 venv/
 env/
 .venv/
 .env
 
-# --- Distribuição / Builds ---
+# --- Distribuição e Builds ---
 build/
 dist/
 *.egg-info/
 
-# --- IDEs e Editores ---
+# --- Editores ---
 .vscode/
 .idea/
 *.swp
 
-# --- Variáveis de Ambiente e Segredos (ONDE FICAM AS KEYS) ---
+# --- Variáveis de Ambiente e KEYS ---
 .env
 .env.local
 secrets.py
 keys.txt
 
-# --- Memória da Assistente (IMPORTANTE) ---
-# Você não quer subir o histórico de conversas ou o banco de dados pessoal para o GitHub
+# --- Memória da Assistente ---
 memoria.json
 memoria_lola.json
 memoria_longo_prazo.json
 *.db
 chroma_db/
 
-# --- Flet (Interface Gráfica) ---
-# Pastas temporárias geradas pelo Flet durante a execução
+# --- Interface Gráfica ---
 flet_app/
 build/flutter_assets/
 
