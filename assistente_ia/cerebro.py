@@ -11,12 +11,11 @@ from config import PERSONALIDADE
 ARQUIVO_MEMORIA = "memoria_lola.json"
 BUFFER_CONVERSA = [] 
 
-# --- Configuração do Modelo (Correção Lógica) ---
-# Detecta onde estamos rodando APENAS UMA VEZ
-if platform.machine() == 'x86_64': # Seu PC Intel
-    MODELO_USADO = "tinyllama"
+# --- Configuração do Modelo ---
+if platform.machine() == 'x86_64': 
+    MODELO_USADO = "tinyllama" # pc
     print("⚠️ Usando modelo leve (TinyLlama) para desenvolvimento no PC.")
-else: # Raspberry Pi (aarch64)
+else: # Raspberry 
     MODELO_USADO = "llama3.2:3b"
     print("🚀 Usando modelo oficial (Llama 3.2) no Raspberry Pi.")
 
@@ -59,7 +58,6 @@ def processar_resumo():
     """
     
     try:
-        # CORREÇÃO: Usando a variável MODELO_USADO em vez de string fixa
         resposta = ollama.chat(model=MODELO_USADO, messages=[
             {'role': 'user', 'content': prompt_arquivista}
         ])
@@ -74,7 +72,7 @@ def processar_resumo():
         print(f"[Erro] Falha ao resumir: {e}")
 
 def rodar_agendador():
-    # Roda a cada 2 minutos para teste (mude para 10 depois)
+    # Roda a cada 2 minutos (mudar para 10 depois)
     schedule.every(2).minutes.do(processar_resumo)
     
     while True:
@@ -96,7 +94,6 @@ def perguntar_ia(pergunta_usuario):
     prompt_sistema = f"{PERSONALIDADE}\n{texto_memoria}"
     
     try:
-        # CORREÇÃO: Usando a variável MODELO_USADO
         resposta = ollama.chat(model=MODELO_USADO, messages=[
             {'role': 'system', 'content': prompt_sistema},
             {'role': 'user', 'content': pergunta_usuario},
@@ -109,9 +106,7 @@ def perguntar_ia(pergunta_usuario):
     except Exception as e:
         return f"Erro no cérebro: {e}"
 
-# --- ÁREA DE TESTE (Correção do Loop) ---
-# O if __name__ == "__main__" garante que isso SÓ roda se você der play 
-# direto neste arquivo. Se o main.py importar, isso é ignorado.
+# --- ÁREA DE TESTE ---
 if __name__ == "__main__":
     print("🧪 Testando Cérebro isoladamente...")
     while True:
