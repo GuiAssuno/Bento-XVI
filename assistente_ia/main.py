@@ -1,13 +1,13 @@
 from hardware import ControleHardware
 from cerebro import perguntar_ia
 
-# Inicializa o hardware (Real ou Simulado)
+# Inicializa o hardware
 casa = ControleHardware()
 
 def processar_comando(texto):
     texto = texto.lower()
     
-    # Lógica simples de comando antes de chamar a IA pesada
+    # Lógica de comando antes de chamar lola
     if "ligar luz" in texto:
         casa.ligar_luz()
         return "Liguei a luz para você."
@@ -15,10 +15,10 @@ def processar_comando(texto):
         casa.desligar_luz()
         return "Desliguei a luz."
     else:
-        # Se não for comando simples, pergunta pro Cérebro
+        # Se não for comando simples, pergunta pro cerebro.py
         return perguntar_ia(texto)
 
-# Teste manual no terminal
+# ========================= Teste  ===========================
 if __name__ == "__main__":
     while True:
         comando = input("Você: ")
