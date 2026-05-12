@@ -14,15 +14,15 @@ analisar formas fazer e aplicar um consumir otimizado e melhorado do combustivo.
 
 ## Elétrica/Eletrônica
 
-A
+...
 #### Desafios a Superar:
 Quando se trata de uma automação que deve ser viável offline wireless em RTS (Real-Time System "Sistemas de tempo real")um doas maiores desafios é o consumo energéticos pelos sistemas operadores responsáveis por fazer vários cálculos  em questão de milésimos de segundos em um ambiente que qualquer fração de tempo por influenciar entre uma decisão bem tomada e uma decisão que pode custar sua vida. a alimentação desses recursos merece uma certa atenção principalmente por conta da compatibilidade energética, versões de tecnologias diferente, picos de corrente, corte repentinos de energia e administração energética, tanto na parte de consumo como distribuição.
 ## Computacional
 
-A área computacional pretende focar no desenvolvimento de software, como esse projeto visa a utilização de [[I.A|I.A]] ([[I.A|Inteligência artificial]]), [[Sistemas Embarcados|Embarcados]] e [[IoT|IoT]] a parte computacional ficaria muito extensa por se tratar de diversos objetivos separados com a finalidades de trabalharem juntos no final. Dito isso, resolvi separar a area computacional em 3 partes onde vou abordar cada parte individualmente separados e depois trata-los aqui de uma forma conjunta aprofundada nessa comunicação entre dispositivos.
-A parte do modelo de [[I.A|Inteligência artificial]] foi separado em um outro projeto nomeado projeto [[lola|LoLa]], lola será o nome dado a assistente de bordo. ela será desenvolvida e estudada em um projeto paralelo com o objetivo final cruzar com o projeto [[Bento XVI]].
-Os [[Sistemas Embarcados|embarcados]] serão tratados em uma parte separadas com objetivo de analisar e as diferenças, desempenho e eficiência, como os chips [[Eletrônica/microcontroladores/Microcontroladores|processadores]], [[Eletrônica/microcontroladores/Microcontroladores|PICs]], memoria, consumo energético e estabilidade.
-O uso do [[IoT|IoT]] seria a questão dos protocolos [[IoT|IoT]] testando as formas de comunicação considerando que deve ser um sistema offline funcionando localmente de forma interna, tornando isso uma computação de borda.
+A área computacional pretende focar no desenvolvimento de software, como esse projeto visa a utilização de I.A (Inteligência artificial), Embarcados e IoT a parte computacional ficaria muito extensa por se tratar de diversos objetivos separados com a finalidades de trabalharem juntos no final. Dito isso, resolvi separar a area computacional em 3 partes onde vou abordar cada parte individualmente separados e depois trata-los aqui de uma forma conjunta aprofundada nessa comunicação entre dispositivos.
+A parte do modelo de Inteligência artificial foi separado em um outro projeto nomeado projeto LoLa, lola será o nome dado a assistente de bordo. ela será desenvolvida e estudada em um projeto paralelo com o objetivo final cruzar com o projeto Bento XVI.
+Os embarcados serão tratados em uma parte separadas com objetivo de analisar e as diferenças, desempenho e eficiência, como os chips processadores, PICs, memoria, consumo energético e estabilidade.
+O uso do IoT seria a questão dos protocolos IoT testando as formas de comunicação considerando que deve ser um sistema offline funcionando localmente de forma interna, tornando isso uma computação de borda.
 
 #### Desafios a Superar
 O principal desafio a ser superado na área computacional é a otimização do sistema para processar tudo que o projeto propõe reduzindo ao máximo o tempo de latência do sistema ao mesmo tempo tornando um sistema robusto para aguentar o estresse causado pelo recebido dos dados e pelo veiculo. Não se trata apenas de blocos de memoria, tenho que analisar principalmente o processamento, o tempo e estabilidade, estudar, analisar e identificar as possíveis causas que fariam o sistema apresentar falhas e atrapalhar o condutor, o que seria contra mão da premissa do projeto.
