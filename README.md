@@ -1,8 +1,9 @@
+# BentoXVI
+
 O projeto BentoXVI é um projeto pessoal que eu resolvi usar como trabalho de conclusão de curso na Fatec para a minha graduação em Analise e desenvolvimento de curso. o trabalho consiste em transformar um carro antigo em um carro antigo com tecnologia moderna. Esse projeto se sub divide em 3 sub áreas dentro das áreas da tecnologia. a primeira é a mecânica. o carro antigo tem que apresentar condições favoráveis para os teste, além de apresentar falhas dentro do esperado. o bom funcionamento mecânico influencia nos resultados práticos do projeto. Elétrica/eletrônica, a parte elétrica do carro deve estar em excelentes condições para o ligamento com a parte eletrônica e computacional, ter os componentes adequados é fundamento para uma boa comunicação e minimizar os efeitos que influencia negativamente nas analise e performance do projeto. A computação, a parte computacional do projeto é uma parte essencial, como todas as outras, mas principalmente pela responsabilidade direta com a apresentação dos dados, recolhimentos do tal e processamento deles. A área computacional terá que otimizar o seu uso e considerando que cada bloco de memoria, cada processamento é importante e impacta fortemente nos resultados finais mostrando sua viabilidade em ambientes real de uso.
 A parte mecânica eu irei incluir a toda a parte estrutural do veículos. motor, suspensão, embreagem, funilaria e acessórios. A parte será tratada toda a parte elétrica e eletrônica do carro, tudo sobre componentes, como reles, lâmpadas, ligações estruturais, chaveamento baterias e demais. a parte computacional será abordado apenas a parte de software do projeto, tudo relacionado a programação, linguagens e áreas da computação serão abordadas na área da eletrônica. Haverá componentes, recursos, métodos entre outros que serão de comum interesse de duas ou mais áreas, e visto isso, pretendo abordá-las em ambas as áreas focando mais na parte correlacionada a sua área, sendo assim possível aprofundar mais em seu desenvolvimento especifico por área e assunto.
-
-## Mecânica
-
+---
+## 🔧 Mecânica
 O motor do veiculo tratasse de um motor a combustão 2.5 litros (151 pol³) de 4 cilindros retificado com 2.471 cm³ Cilindradas com potência máxima de 99 cv, Torque de 21,6 kgfm, Aceleração 0 a 100 km/h em mais ou menos 18,6 segundos, alimentado por gasolina consumindo em media 7 km/l na cidade e 9 km/l na estrada gerando uma autonomia de 585 km em rodovias com o tanque de 65 litros. Freios a discos na frente e tambores suspensão dianteira independente e eixo rígido na traseira com velocidade máxima de  149 km/h.
 
 #### Desafios a Superar:
@@ -11,14 +12,13 @@ Conectar os sensores existentes e implementar novos sensores.
 medir os ruídos que o motor gera.
 considerar uma troca de um alternador por um mais potente 
 analisar formas fazer e aplicar um consumir otimizado e melhorado do combustivo. 
-
-## Elétrica/Eletrônica
-
+---
+## ⚡ Elétrica/Eletrônica
 ...
 #### Desafios a Superar:
 Quando se trata de uma automação que deve ser viável offline wireless em RTS (Real-Time System "Sistemas de tempo real")um doas maiores desafios é o consumo energéticos pelos sistemas operadores responsáveis por fazer vários cálculos  em questão de milésimos de segundos em um ambiente que qualquer fração de tempo por influenciar entre uma decisão bem tomada e uma decisão que pode custar sua vida. a alimentação desses recursos merece uma certa atenção principalmente por conta da compatibilidade energética, versões de tecnologias diferente, picos de corrente, corte repentinos de energia e administração energética, tanto na parte de consumo como distribuição.
-## Computacional
-
+---
+## 💻 Computacional
 A área computacional pretende focar no desenvolvimento de software, como esse projeto visa a utilização de I.A (Inteligência artificial), Embarcados e IoT a parte computacional ficaria muito extensa por se tratar de diversos objetivos separados com a finalidades de trabalharem juntos no final. Dito isso, resolvi separar a area computacional em 3 partes onde vou abordar cada parte individualmente separados e depois trata-los aqui de uma forma conjunta aprofundada nessa comunicação entre dispositivos.
 A parte do modelo de Inteligência artificial foi separado em um outro projeto nomeado projeto LoLa, lola será o nome dado a assistente de bordo. ela será desenvolvida e estudada em um projeto paralelo com o objetivo final cruzar com o projeto Bento XVI.
 Os embarcados serão tratados em uma parte separadas com objetivo de analisar e as diferenças, desempenho e eficiência, como os chips processadores, PICs, memoria, consumo energético e estabilidade.
