@@ -108,7 +108,7 @@ def perguntar_ia(pergunta_usuario):
 
 # --- ÁREA DE TESTE ---
 if __name__ == "__main__":
-    print("🧪 Testando Cérebro isoladamente...")
+    print(" Testando Cérebro isoladamente...")
     while True:
         txt = input("Você: ")
         print("Lola:", perguntar_ia(txt))

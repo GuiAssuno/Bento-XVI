@@ -4,7 +4,7 @@ from main import processar_comando  # lógica
 def main(page: ft.Page):
     page.title = "Assistente IA"
     page.vertical_alignment = ft.MainAxisAlignment.START
-    page.theme_mode = ft.ThemeMode.DARK # gasta menos energia
+    page.theme_mode = ft.ThemeMode.DARK
     
     # roda quando enviar
     def enviar_mensagem(e):

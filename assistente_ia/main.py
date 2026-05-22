@@ -18,7 +18,7 @@ def processar_comando(texto):
         # Se não for comando simples, pergunta pro cerebro.py
         return perguntar_ia(texto)
 
-# ========================= Teste  ===========================
+# =========================  Teste  ===========================
 if __name__ == "__main__":
     while True:
         comando = input("Você: ")
