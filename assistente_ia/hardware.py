@@ -10,9 +10,9 @@ try: #importar a biblioteca de pinos.
     MODO_SIMULACAO = False
     print("🔌 Hardware Real Detectado (Raspberry Pi)")
     
-except ImportError: # Se falhar, é porque estamos no PC.
+except ImportError: # Se falhar, é porque está no PC.
     MODO_SIMULACAO = True
-    print("💻 Modo Simulação Ativado (PC Ubuntu)")
+    print("Modo Simulação Ativado (PC Ubuntu)")
 
 class ControleHardware:
     def __init__(self):
@@ -22,10 +22,10 @@ class ControleHardware:
 
     def ligar_luz(self):
         if MODO_SIMULACAO:
-            print("[SIMULAÇÃO] 💡 A luz foi LIGADA virtualmente.")
+            print("foi ligada")
         else:
             GPIO.output(17, GPIO.HIGH)
-            print("[HARDWARE] Luz ligada no pino 17.")
+            print("Luz ligada no pino 17.")
 
     def desligar_luz(self):
         if MODO_SIMULACAO:
