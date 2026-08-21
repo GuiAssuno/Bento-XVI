@@ -8,11 +8,9 @@ ARQUITETURA = platform.machine()
 try: #importar a biblioteca de pinos.
     import RPi.GPIO as GPIO
     MODO_SIMULACAO = False
-    print("🔌 Hardware Real Detectado (Raspberry Pi)")
     
 except ImportError: # Se falhar, é porque está no PC.
     MODO_SIMULACAO = True
-    print("Modo Simulação Ativado (PC Ubuntu)")
 
 class ControleHardware:
     def __init__(self):
@@ -29,7 +27,7 @@ class ControleHardware:
 
     def desligar_luz(self):
         if MODO_SIMULACAO:
-            print("[SIMULAÇÃO] 🌑 A luz foi DESLIGADA virtualmente.")
+            print("A luz desligou.")
         else:
             GPIO.output(17, GPIO.LOW)
-            print("[HARDWARE] Luz desligada.")
+            print("Luz desligada.")
